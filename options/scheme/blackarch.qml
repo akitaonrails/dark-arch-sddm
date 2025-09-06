@@ -129,8 +129,8 @@ Rectangle {
 
                 Image {
                     id: logo
-                    width: 177
-                    height: 177
+                    width: 800
+                    height: 188
                     fillMode: Image.PreserveAspectFit
                     transformOrigin: Item.Center
                     source: config.logo
@@ -138,9 +138,9 @@ Rectangle {
 
                 TextBox {
                     id: name
-                    width: 177
+                    width: 800
                     text: userModel.lastUser
-                    font.pixelSize: 16
+                    font.pixelSize: 32  
                     radius: 20
                     color: "#77000000"
                     borderColor: "#77000000"
@@ -153,8 +153,8 @@ Rectangle {
 
                 PasswordBox {
                     id: password
-                    width: 177
-                    font.pixelSize: 16
+                    width: 800
+                    font.pixelSize: 32
                     radius: 20
                     color: "#77000000"
                     borderColor: "#77000000"
@@ -184,7 +184,7 @@ Rectangle {
                     id: errorMessage
                     anchors.horizontalCenter: parent.horizontalCenter
                     text: " "
-                    font.pixelSize: 12
+                    font.pixelSize: 20
                     color: "white"
                 }
             }
@@ -222,7 +222,7 @@ Rectangle {
                     model: sessionModel
                     index: sessionModel.lastIndex
 
-                    font.pixelSize: 14
+                    font.pixelSize: 20
 
                     KeyNavigation.backtab: btnPoweroff;
                 }
